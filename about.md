@@ -6,7 +6,7 @@ title: "关于：About"
 ## 个人简介：
 
 * Kev1nZha0
-* .Net爱好者
+* .Net 爱好者
 
 
 ## 联系方式
@@ -18,7 +18,7 @@ title: "关于：About"
  <a href="http://www.zhihu.com/people/lippi-ouyang" title="知乎联系我">
 <img src="http://www.zhihu.com/favicon.ico" width="24" height="24" style="display:inline-block;vertical-align:middle"></a><br/>
  -->
-<a href="https://github.com/LippiOuYang" title="Github联系我">
+<a href="https://github.com/Kev1nZha0" title="Github联系我">
 <img src="http://www.github.com/favicon.ico" width="24" height="24" style="display:inline-block;vertical-align:middle"></a><br/>
 <!--邮箱: ouyanglip@gmail.com -->
 </p>
