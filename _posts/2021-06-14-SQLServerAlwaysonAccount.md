@@ -1,17 +1,17 @@
 ---
 layout: post
-title: SQL Server Alwayson �˺�ͬ��
+title: SQL Server Alwayson 账号同步
 category: SQL
 tag: [SQL]
 ---
 
-����SQL Server Alwayson Ǩ�Ƶ�ʱ��ʹ��SQL�˺�ʱ,�������Ȩ��,�����޷�ͬ��Ȩ��,ʹ�����˺���û���������
+在做SQL Server Alwayson 迁移的时候当使用SQL账号时,主库加上权限,备库无法同步权限,使用域账号则没有这个问题
 
-���ܵ��뵽��������Ϊ�������Ƿֱ����ӵ�SQL�˺�,�˺ŵ�SID��һ��,���µ�SQL�ڱ����Ȩ�޵�ʱ��ʧ��.
+本能的想到可能是因为主备库是分别添加的SQL账号,账号的SID不一致,导致的SQL在备库加权限的时候失败.
 
-��ô��θ���һ����ȫ��ͬ���˺�ȥ����,�ο�΢���ṩ�ķ���:
+那么如何复制一个完全相同的账号去备库,参考微软提供的方案:
 
-1. �����⽨�������˺����Ĵ洢����
+1. 在主库建立生成账号语句的存储过程
 
         USE master
         GO
@@ -148,20 +148,22 @@ tag: [SQL]
         RETURN 0
         GO
 
-2. SSMS��ѡ�����ı���ʽ��ʾ�����ִ������Ĵ洢����
+2. SSMS中选择以文本格式显示结果并执行上面的存储过程
 
         EXEC sp_help_revlogin
 
-3. ���ı������������临�Ƶ�����ִ��
+3. 将文本框内输出的语句复制到备库执行
 
         CREATE LOGIN [sasa] WITH PASSWORD = 0x0200A34FF3AEA1C67E7F7EC5F436607FAF1494F27E26F8B34356A20AA2E2419FB5E21AFC17551805C3822697501783CD2C22206087F5C2594AFB6CEF515D7AD48898B0ACF772 HASHED, SID = 0x5459C58748D86349800D246DA21AF276, DEFAULT_DATABASE = [master], CHECK_POLICY = OFF, CHECK_EXPIRATION = OFF
 
-4. ��������˺Ÿ�Ȩ
+4. 在主库给账号赋权
 
 
--------
 
 
-�ο�����:
+
+
+**参考连接:**
 
 https://docs.microsoft.com/zh-CN/troubleshoot/sql/security/transfer-logins-passwords-between-instances
+到1433.
