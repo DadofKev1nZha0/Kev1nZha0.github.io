@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\images\\images",
+    "\\images\\images\\githubpages",
+    "\\images\\images\\rainingchrome",
+    "\\images\\pages",
+    "\\js",
+    "\\_includes",
+    "\\_layouts",
+    "\\_posts"
   ],
-  "SelectedNode": "\\Pictures",
+  "SelectedNode": "\\_includes\\comment.html",
   "PreviewInSolutionExplorer": false
 }
