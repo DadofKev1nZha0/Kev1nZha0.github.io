@@ -160,10 +160,9 @@ tag: [SQL]
 
 
 
-
+#
 
 
 **参考连接:**
 
 https://docs.microsoft.com/zh-CN/troubleshoot/sql/security/transfer-logins-passwords-between-instances
-到1433.
