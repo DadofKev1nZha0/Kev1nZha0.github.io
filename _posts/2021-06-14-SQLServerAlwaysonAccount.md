@@ -160,9 +160,8 @@ tag: [SQL]
 
 
 
-#
 
 
 **参考连接:**
 
-https://docs.microsoft.com/zh-CN/troubleshoot/sql/security/transfer-logins-passwords-between-instances
+[在登录实例之间传输登录SQL Server](https://docs.microsoft.com/zh-CN/troubleshoot/sql/security/transfer-logins-passwords-between-instances)
