@@ -11,11 +11,11 @@ tag: [SQL]
 
 注册表修改项
 
-Windows Registry Editor Version 5.00
+	Windows Registry Editor Version 5.00
 
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\SQL Server Management Studio\18.0_IsoShell\DataProject]
-"SSVPropViewColumnsSQL70"="1,2,6,17;"
-"SSVPropViewColumnsSQL80"="1,2,6,17;"
+	[HKEY_CURRENT_USER\SOFTWARE\Microsoft\SQL Server Management Studio\18.0_IsoShell\DataProject]
+	"SSVPropViewColumnsSQL70"="1,2,6,17;"
+	"SSVPropViewColumnsSQL80"="1,2,6,17;"
 
 
 注意：在设置注册表时，管理器需要是关闭状态。
