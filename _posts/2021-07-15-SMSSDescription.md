@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SQL Management Studio 2019 表设计界面增加说明列 
-category: Git
+category: SQL
 tag: [SQL]
 ---
 
